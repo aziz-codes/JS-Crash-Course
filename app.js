@@ -1,2 +1,6 @@
-let count = 3;
- console.log(count+=6)
+let count = 0;
+
+function increment(){
+    count+=1;
+    document.getElementById('counter').innerText = count;;
+}
