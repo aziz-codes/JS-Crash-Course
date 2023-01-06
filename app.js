@@ -1,19 +1,21 @@
-"strict"
+
 let count = 0;
 let countEl = document.getElementById('counter');
+let entriesEl = document.getElementById('entries-el');
+let entries = "Previous Entires : ";
+
 
 function increment(){
     count+=1;
     countEl.innerText = count;;
+    
 }
-
 
 function save(){
-    console.log(count);
+    entries+=count+" - ";
+    entriesEl.textContent = entries;
 }
 
-  let name = "Aziz";
-  let greeting = "This is my greeting message";
 
-  let myGreeting = name+" "+greeting;
-  console.log(myGreeting)
+
+  
