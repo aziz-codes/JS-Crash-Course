@@ -16,6 +16,6 @@ function save(){
     entriesEl.textContent = entries;
 }
 
-
-
-  
+function change(){
+    document.body.style.backgroundColor = "skyblue";
+}
