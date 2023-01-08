@@ -16,6 +16,7 @@ function save(){
     entriesEl.textContent = entries;
 }
 
-function change(){
-    document.body.style.backgroundColor = "skyblue";
-}
+const name = "Aziz";
+const age = 24;
+
+let check = Boolean(age>20 && name.toLowerCase()==="Aziz".toLocaleLowerCase());
