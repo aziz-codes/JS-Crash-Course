@@ -20,3 +20,4 @@ const name = "Aziz";
 const age = 24;
 
 let check = Boolean(age>20 && name.toLowerCase()==="Aziz".toLocaleLowerCase());
+//test commit
