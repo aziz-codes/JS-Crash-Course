@@ -16,8 +16,15 @@ function save(){
     entriesEl.textContent = entries;
 }
 
-const name = "Aziz";
-const age = 24;
+function Parent(){
+   let myCount = 0;
 
-let check = Boolean(age>20 && name.toLowerCase()==="Aziz".toLocaleLowerCase());
-//test commit
+    function Child(){
+   myCount = 6;
+   }
+   Child()
+   console.log(myCount);
+}
+
+
+Parent();
