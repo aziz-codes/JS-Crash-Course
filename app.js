@@ -21,9 +21,9 @@ function Parent(){
 
     function Child(){
    myCount = 6;
-   }
-   Child()
    console.log(myCount);
+   }
+  return Child();
 }
 
 
