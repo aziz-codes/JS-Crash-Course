@@ -1,30 +1,5 @@
+let errorEl = document.getElementById('error-message');
 
-let count = 0;
-let countEl = document.getElementById('counter');
-let entriesEl = document.getElementById('entries-el');
-let entries = "Previous Entires : ";
-
-
-function increment(){
-    count+=1;
-    countEl.innerText = count;;
-    
+function handlePurchase(){
+    errorEl.textContent = "Something went wrong, please try again";
 }
-
-function save(){
-    entries+=count+" - ";
-    entriesEl.textContent = entries;
-}
-
-function Parent(){
-   let myCount = 0;
-
-    function Child(){
-   myCount = 6;
-   }
-   Child()
-   console.log(myCount);
-}
-
-
-Parent();
