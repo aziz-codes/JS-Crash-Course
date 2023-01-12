@@ -43,14 +43,21 @@ function newCard()
 
 // recap and assesment at timestamp : 04:16:25
 
-const user={
-    name: "Aziz",
-    age: 24,
-    country: "Pakistan"
-}
-function logData(){
-    log = user.name +" is "+user.age+" years old and lives in "+user.country;
-    return log;
-}
-
-console.log(logData())
+ let age = 90;
+ let discount = "";
+ if(age < 6){
+  discount = "Free";
+ }
+ else if(age > 6 && age < 17){
+    discount = "Child Discount";
+ }
+ else if(age > 18 && age < 26){
+    discount = "Student discount";
+ }
+ else if(age > 27 && age < 66){
+    discount = "Full Price";
+ }
+ else {
+    discount = "Senior Citizen Discount";
+ }
+ console.log(discount);
