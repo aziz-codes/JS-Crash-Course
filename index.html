@@ -9,11 +9,15 @@
 </head>
 <body>
    <div class="container">
-    <h3>People Entered</h3>
-      <h1 id="counter">0</h1>
-      <button id="increment-btn" onclick="increment()">INCRMENT</button>
-      <button id="save-btn" onclick="save()">Save</button>
-      <h4 id="entries-el"></h4>
+    <h4 class="title">Start clickng draw button to draw your card (3 times)</h4>
+    <h4 id="message-el"></h4>
+    <h2 id="remaing-card-el">3</h2>
+    <h1 id="cards-el"></h1>
+     <h1 id="sum-el"></h1>
+    <button class="btn" onclick="drawCard()">Draw Card</button>
+    <button class="btn" onclick="replay()" style="display: none;;" id="replay-btn">Replay</button>
+
+      
       
    </div>
    <script src="./app.js"></script>
