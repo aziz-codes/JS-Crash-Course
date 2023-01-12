@@ -8,6 +8,7 @@ function replay(){
     sum = 0;
     isAlive = true;
 }
+console.log(Math)
 function drawCard(){
 counts-=1;
 if(counts>=0){
