@@ -40,3 +40,17 @@ function newCard()
    startGame();
    }
 }
+
+// recap and assesment at timestamp : 04:16:25
+
+const user={
+    name: "Aziz",
+    age: 24,
+    country: "Pakistan"
+}
+function logData(){
+    log = user.name +" is "+user.age+" years old and lives in "+user.country;
+    return log;
+}
+
+console.log(logData())
