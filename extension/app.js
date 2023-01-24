@@ -1,12 +1,15 @@
 const inputBtn = document.getElementById("input-btn");
-let myLeads = [];
+let myLeads = ["www.github.com"];
 const inputEl = document.getElementById("input-el");
 const lists = document.getElementById("lists");
 inputBtn.addEventListener("click", () => {
   let link = inputEl.value;
   myLeads.push(link);
-  renderLeads();
   inputEl.value = "";
+
+  localStorage.setItem("myLeads", JSON.stringify(myLeads));
+
+  renderLeads();
 });
 
 function renderLeads() {
