@@ -32,13 +32,14 @@ function render(leads) {
   }
   lists.innerHTML = listItems;
 }
-// deploying with version 1.0
+// deploying with version 1.1
 
 //handler to save the current opened tab
 
 saveTabBtn.addEventListener("click", () => {
   chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-    let activeTab = tabs[0];
-    let activeTabId = activeTab.id;
+    myLeads.push(tabs[0].url);
+    localStorage.setItem("myLeads", JSON.stringify(myLeads));
+    render(myLeads);
   });
 });
