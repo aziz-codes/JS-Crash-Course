@@ -16,3 +16,4 @@ function renderLeads() {
   }
   lists.innerHTML = listItems;
 }
+// deploying with version 1.0
