@@ -43,3 +43,5 @@ saveTabBtn.addEventListener("click", () => {
     render(myLeads);
   });
 });
+
+// Course Completed with time stamp of 07:44:19
