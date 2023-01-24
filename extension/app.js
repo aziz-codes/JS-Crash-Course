@@ -32,3 +32,9 @@ function render(leads) {
   lists.innerHTML = listItems;
 }
 // deploying with version 1.0
+
+function sayHello(name) {
+  console.log(`Hello ${name}`);
+}
+
+sayHello("Aziz");
