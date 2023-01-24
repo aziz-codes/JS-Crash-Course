@@ -4,6 +4,7 @@ let myLeads = [];
 const inputEl = document.getElementById("input-el");
 const lists = document.getElementById("lists");
 const deleteBtn = document.getElementById("delete-btn");
+const saveTabBtn = document.getElementById("tab-btn");
 
 const leadsInLocalStorage = JSON.parse(localStorage.getItem("myLeads"));
 if (leadsInLocalStorage) {
@@ -33,8 +34,11 @@ function render(leads) {
 }
 // deploying with version 1.0
 
-function sayHello(name, age) {
-  console.log(`Hello ${name} your given age is ${age}`);
-}
+//handler to save the current opened tab
 
-sayHello("Aziz", 24);
+saveTabBtn.addEventListener("click", () => {
+  chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+    let activeTab = tabs[0];
+    let activeTabId = activeTab.id;
+  });
+});
