@@ -33,8 +33,8 @@ function render(leads) {
 }
 // deploying with version 1.0
 
-function sayHello(name) {
-  console.log(`Hello ${name}`);
+function sayHello(name, age) {
+  console.log(`Hello ${name} your given age is ${age}`);
 }
 
-sayHello("Aziz");
+sayHello("Aziz", 24);
