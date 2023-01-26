@@ -14,10 +14,15 @@ if (leadsInLocalStorage) {
 //handler to add item to the localstorage.
 inputBtn.addEventListener("click", () => {
   let link = inputEl.value;
-  myLeads.push(link);
-  inputEl.value = "";
-  localStorage.setItem("myLeads", JSON.stringify(myLeads));
-  render(myLeads);
+  if (myLeads.includes(link)) {
+    alert("link already exists");
+    return;
+  } else {
+    myLeads.push(link);
+    inputEl.value = "";
+    localStorage.setItem("myLeads", JSON.stringify(myLeads));
+    render(myLeads);
+  }
 });
 // handler to remove all the links from localstorage and clean up the DOM.
 deleteBtn.addEventListener("dblclick", () => {
@@ -43,5 +48,4 @@ saveTabBtn.addEventListener("click", () => {
     render(myLeads);
   });
 });
-
 // Course Completed with time stamp of 07:44:19
